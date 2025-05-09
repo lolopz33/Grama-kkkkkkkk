@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montanhas Épicas - Aventuras nas Alturas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/epic-music.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="music-control" onclick="toggleMusic()">
+        <span id="musicIcon">🎵</span>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>MONTANHAS ÉPICAS</h1>
+            <p>Onde a aventura encontra a grandiosidade da natureza</p>
+            <button onclick="scrollToContent()">EXPLORAR</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>SOBRE AS MAIORES ELEVAÇÕES DO MUNDO</h2>
+            <p>Montanhas são os gigantes silenciosos do nosso planeta, testemunhas da história geológica da Terra e desafios irresistíveis para aventureiros.</p>
+        </section>
+
+        <section class="gallery">
+            <h2>MONTANHAS FODAS</h2>
+            <div class="mountain-grid">
+                <div class="mountain-card">
+                    <img src="assets/images/everest.jpg" alt="Monte Everest">
+                    <h3>Monte Everest</h3>
+                    <p>8,848m - Nepal/China</p>
+                    <button onclick="showStory('everest')">VER RELATO</button>
+                </div>
+                <div class="mountain-card">
+                    <img src="assets/images/k2.jpg" alt="K2">
+                    <h3>K2</h3>
+                    <p>8,611m - Paquistão/China</p>
+                    <button onclick="showStory('k2')">VER RELATO</button>
+                </div>
+                <div class="mountain-card">
+                    <img src="assets/images/aconcagua.jpg" alt="Aconcágua">
+                    <h3>Aconcágua</h3>
+                    <p>6,961m - Argentina</p>
+                    <button onclick="showStory('aconcagua')">VER RELATO</button>
+                </div>
+                <div class="mountain-card">
+                    <img src="assets/images/denali.jpg" alt="Denali">
+                    <h3>Denali</h3>
+                    <p>6,190m - Alasca, EUA</p>
+                    <button onclick="showStory('denali')">VER RELATO</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories" id="storiesSection">
+            <h2>RELATOS ÉPICOS</h2>
+            <div class="story" id="everest-story">
+                <h3>Everest - A Montanha que Quase Me Matou</h3>
+                <p>"No campo 4, a 8.000m de altitude, meu oxigênio acabou. A tempestade chegou sem aviso e a visibilidade caiu para zero. Cada passo era uma tortura, mas desistir significava morte certa. Quando finalmente alcancei o cume, chorei como um bebê - não por alegria, mas por alívio de ainda estar vivo."</p>
+                <p>- Carlos, alpinista brasileiro</p>
+            </div>
+            <div class="story" id="k2-story">
+                <h3>K2 - A Montanha Selvagem</h3>
+                <p>"O K2 não perdoa erros. No meio da 'Bottleneck', a seção mais perigosa, vi um companheiro de escalada escorregar e despencar. Não houve nada que pudéssemos fazer. Essa montanha exige respeito absoluto - ela decide quem chega ao topo e quem não volta para contar a história."</p>
+                <p>- Ana, alpinista experiente</p>
+            </div>
+            <div class="story" id="aconcagua-story">
+                <h3>Aconcágua - Meu Primeiro Sete Mil</h3>
+                <p>"Como iniciante, subestimei o 'Gigante da América'. A 6.000m, o mal da altitude me derrubou. Vomitei, tive alucinações, mas me recusei a desistir. Quando finalmente cheguei ao topo, entendi que montanhas não são sobre conquista, mas sobre superar seus próprios limites."</p>
+                <p>- Ricardo, aventureiro</p>
+            </div>
+            <div class="story" id="denali-story">
+                <h3>Denali - Frio Além da Imaginação</h3>
+                <p>"-40°C com vento de 80km/h. Meus dedos congelaram mesmo com as melhores luvas. Passamos 3 semanas na montanha, lutando contra o clima mais hostil que já experimentei. No dia do cume, o céu abriu e vimos a curvatura da Terra. Valeu cada segundo de sofrimento."</p>
+                <p>- Marcos, montanhista</p>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>ASSISTA A ESSE VÍDEO INCRÍVEL</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6R5FEz-3i5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Montanhas Épicas - Todos os direitos reservados</p>
+        <p>Criado com ❤️ para amantes de aventuras extremas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
